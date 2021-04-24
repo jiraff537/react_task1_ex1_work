@@ -11,4 +11,23 @@ row1   | row2
 @startuml
 Bob -> Alice : hello
 Alice -> Bob : you too
-@enduml```
+@enduml
+```
+
+```plantumlcode
+@startuml
+Bob -> Alice : hello
+Alice -> Bob : you too
+@enduml
+```
+
+```plantuml
+@startuml component
+actor client
+node app
+database db
+
+db -> app
+app -> client
+@enduml
+```
